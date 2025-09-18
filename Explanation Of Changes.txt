@@ -1,0 +1,19 @@
+Multiple Checkboxes:
+I replaced the single bool? value with a Map<String, bool?> algorithms to manage multiple algorithm options. This demonstrates handling multiple checkbox states in Flutter.
+
+Select All Checkbox:
+Added a tristate "Select All" checkbox that can be checked, unchecked, or indeterminate (null). When toggled, it sets all individual checkboxes accordingly. This shows how to implement a master checkbox controlling others.
+
+State Synchronization:
+The updateSelectAll() method updates the "Select All" checkbox state based on the individual checkboxes, setting it to:
+
+true if all are checked,
+false if all are unchecked,
+null (indeterminate) if mixed.
+Display Selected Items:
+Added a Text widget that dynamically shows which algorithms are currently selected. This provides immediate feedback to the user.
+
+Comments:
+Added comments throughout the code to explain the purpose of each change and how it works.
+
+x1
